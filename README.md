@@ -10,3 +10,4 @@
 
 ### Lighthouse Accessibility Report Score
 
+[score](Screenshot 2023-02-07 134437.png)
