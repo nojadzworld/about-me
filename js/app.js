@@ -7,7 +7,7 @@ while (!userName) {
 }
 
 alert(`Welcome ${userName} ! Lets play a guessing game..answer with yes or no`);
-
+// Question 1 //
 let answer1 = prompt('Do I like chocolate?').toLowerCase();
 
 if (answer1 === 'yes' || answer1 === 'y')
@@ -17,7 +17,8 @@ if (answer1 === 'yes' || answer1 === 'y')
   alert('You are correct! I do not like chocolate');
   counter++;
 }
-
+// End Question 1 //
+// Question 2 //
 let answer2 = prompt('Do i enjoy coding?').toLowerCase();
 
 if (answer2 === 'yes' || answer2 === 'y')
@@ -29,7 +30,8 @@ else if (answer2 === 'no' || answer2 === 'n')
 { // console.log('no')
   alert('That is incorrect I love the challenges of coding!');
 }
-
+// End Question 2 //
+// Question 3 //
 let answer3 = prompt('Do i write with my left hand?').toLowerCase();
 
 if (answer3 === 'yes' || answer3 === 'y')
@@ -41,7 +43,8 @@ else if (answer3 === 'no' || answer3 === 'n')
 { // console.log('no')
   alert('That is incorrect I am a very ambedextrious lefty with the exception of writing with my right');
 }
-
+// End Question 3 //
+// Question 4 //
 let answer4 = prompt('Do I play on hard difficulty on Guitar Hero?').toLowerCase();
 
 if (answer4 === 'yes' || answer4 === 'y')
@@ -53,7 +56,8 @@ else if (answer4 === 'no' || answer4 === 'n')
   alert('That is correct! I can play expert on guitar hero! I started playing when i was about 10-11 years old.');
   counter++;
 }
-
+// End Question 4 //
+// Question 5 //
 let answer5 = prompt('Do I think that Kendrick Lamar is the greatest music artist alive?').toLowerCase();
 
 if (answer5 === 'yes' || answer5 === 'y')
@@ -65,8 +69,8 @@ else if (answer5 === 'no' || answer5 === 'n')
 { // console.log('no')
   alert('You have got to be joking if you dont think that I love Kendrick Lamar!');
 }
-
-
+// End Question 5 //
+// Question 6 //
 function questionSix() {
   let answer6 = prompt('Guess a number from 1-10?');
   let answer6b = parseInt(answer6);
@@ -88,10 +92,9 @@ while(maxNumberOfAnswer < 4 ){
   maxNumberOfAnswer++;
   questionSix();}
 alert('The answer is 2.');
+// End Question 6 //
 
-
-
-
+// Question 7 //
 let answer7 = ['yellow','orange'];
 let score = 0;
 for(let i = 0; i < 6; i++){
@@ -108,6 +111,7 @@ for(let i = 0; i < 6; i++){
   score++;
 
 }
+// End Question 7//
 alert(`It took you ${score} times to answer. The correct answers were ${answer7}. `);
 
 alert('Thanks for playing ' + userName + ' your overall score was ' + counter + ' out of 7');
