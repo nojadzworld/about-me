@@ -7,98 +7,88 @@ while (!userName) {
 }
 
 alert(`Welcome ${userName} ! Lets play a guessing game..answer with yes or no`);
-// Question 1 //
+
 
 function questionOne() {
 
   let answer1 = prompt('Do I like chocolate?').toLowerCase();
 
   if (answer1 === 'yes' || answer1 === 'y')
-  { // console.log('yes')
-  alert('That is not correct. Chocolate is gross');
+  { 
+    alert('That is not correct. Chocolate is gross');
   } else if (answer1 === 'no' || answer1 === 'n'){ // console.log('no')
-  alert('You are correct! I do not like chocolate');
-  counter++;
+    alert('You are correct! I do not like chocolate');
+    counter++;
   }
 }
 
 questionOne(); 
-// End Question 1 //
-// Question 2 //
 
 function questionTwo() {
-let answer2 = prompt('Do i enjoy coding?').toLowerCase();
+  let answer2 = prompt('Do i enjoy coding?').toLowerCase();
 
-if (answer2 === 'yes' || answer2 === 'y')
-{ // console.log('yes')
-  alert('That is correct. I wouldnt have started learning at Code Fellows');
-  counter++;
-}
-else if (answer2 === 'no' || answer2 === 'n')
-{ // console.log('no')
+  if (answer2 === 'yes' || answer2 === 'y')
+  {
+    alert('That is correct. I wouldnt have started learning at Code Fellows');
+    counter++;
+  }
+  else if (answer2 === 'no' || answer2 === 'n')
+{ 
   alert('That is incorrect I love the challenges of coding!');
- }
+  }
 }
 
 questionTwo();
-// End Question 2 //
-// Question 3 //
 
 function questionThree() {
 
   let answer3 = prompt('Do i write with my left hand?').toLowerCase();
 
-if (answer3 === 'yes' || answer3 === 'y')
-  { // console.log('yes')
-  alert('That is correct and I am very ambedextrious with the exception of writing with my right ');
-  counter++;
+  if (answer3 === 'yes' || answer3 === 'y')
+  {
+    alert('That is correct and I am very ambedextrious with the exception of writing with my right ');
+    counter++;
   }
   else if (answer3 === 'no' || answer3 === 'n')
-  { // console.log('no')
-  alert('That is incorrect I am a very ambedextrious lefty with the exception of writing with my right');
- }
+  {
+    alert('That is incorrect I am a very ambedextrious lefty with the exception of writing with my right');
+  }
 }
 
 questionThree();
-// End Question 3 //
-// Question 4 //
+
 
 function questionFour(){
-let answer4 = prompt('Do I play on hard difficulty on Guitar Hero?').toLowerCase();
+  let answer4 = prompt('Do I play on hard difficulty on Guitar Hero?').toLowerCase();
 
-if (answer4 === 'yes' || answer4 === 'y')
-{ // console.log('yes')
-  alert('Wrong! I can play expert on guitar hero! I started playing when i was about 10-11 years old.');
-}
-else if (answer4 === 'no' || answer4 === 'n')
-{ // console.log('no')
-  alert('That is correct! I can play expert on guitar hero! I started playing when i was about 10-11 years old.');
-  counter++;
+  if (answer4 === 'yes' || answer4 === 'y')
+  {
+    alert('Wrong! I can play expert on guitar hero! I started playing when i was about 10-11 years old.');
+  }
+  else if (answer4 === 'no' || answer4 === 'n')
+  {
+    alert('That is correct! I can play expert on guitar hero! I started playing when i was about 10-11 years old.');
+    counter++;
   }
 }
-// End Question 4 //
-// Question 5 //
 
 function questionFive(){
 
   let answer5 = prompt('Do I think that Kendrick Lamar is the greatest music artist alive?').toLowerCase();
 
   if (answer5 === 'yes' || answer5 === 'y')
-  { // console.log('yes')
-  alert('You are darn right!! His discography replayabilty is unmatched!' );
-  counter++;
+  { 
+    alert('You are darn right!! His discography replayabilty is unmatched!' );
+    counter++;
   }
   else if (answer5 === 'no' || answer5 === 'n')
-{ // console.log('no')
-  alert('You have got to be joking if you dont think that I love Kendrick Lamar!');
-}
+  { 
+    alert('You have got to be joking if you dont think that I love Kendrick Lamar!');
+  }
 }
 
 questionFive();
-// End Question 5 //
 
-
-// Question 6 //
 function questionSix() {
   let answer6 = prompt('Guess a number from 1-10?');
   let answer6b = parseInt(answer6);
@@ -118,31 +108,30 @@ questionSix();
 
 let maxNumberOfAnswer = 0;
 
-// Question 7 //
+
 
 function questionSeven() {
 
-while(maxNumberOfAnswer < 4 ){
-  maxNumberOfAnswer++;
-  questionSix();}
-alert('The answer is 2.');
-// End Question 6 //
+  while(maxNumberOfAnswer < 4 ){
+    maxNumberOfAnswer++;
+    questionSix();}
+  alert('The answer is 2.');
 
-// Question 7 //
-let answer7 = ['yellow','orange'];
-let score = 0;
-for(let i = 0; i < 6; i++){
 
-  let guess7 = prompt('What color is the 3rd and 5th fret button on a guitar hero controller? Green? Yellow? Red? Blue? White? or Orange?').toLowerCase();
-  for(let j = 0; j < answer7.length; j++){
-    if (answer7[j] === guess7){
-      alert('You are correct');
-      score++;
-      i = 6;
-      break;
+  let answer7 = ['yellow','orange'];
+  let score = 0;
+  for(let i = 0; i < 6; i++){
+
+    let guess7 = prompt('What color is the 3rd and 5th fret button on a guitar hero controller? Green? Yellow? Red? Blue? White? or Orange?').toLowerCase();
+    for(let j = 0; j < answer7.length; j++){
+      if (answer7[j] === guess7){
+        alert('You are correct');
+        score++;
+        i = 6;
+        break;
+      }
     }
-  }
-  score++;
+    score++;
 
   }
 
